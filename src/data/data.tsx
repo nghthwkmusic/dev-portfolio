@@ -14,8 +14,10 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-/*
+
+
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+/*
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -210,13 +212,13 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  /*
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Soteria: IDS/IPS for IoT Devices',
+    description: 'Securing IoT Networks Through Specification and Encryption',
+    url: 'https://web.wpi.edu/Pubs/E-project/Available/E-project-051720-222250/unrestricted/Soteria_Report.pdf',
     image: porfolioImage1,
   },
+  /*
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
@@ -353,23 +355,23 @@ resulting in a headless deployment option for EFR32 Chipsets over UART Xmodem.</
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
-    /*
+    
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Pearce Berry (Ex-Rapid7 Manager, Metasploit Team)',
+      text: 'Matt\'s natural inclination to set goals and achieve them meshes well with Rapid7\'s focus on posative customer outcomes. He as helped to make an impact, constintly fixing bugs and adding value to Metasploit Pro and Metasploit Framework.',
+      image: 'https://media.licdn.com/dms/image/C5603AQEfsEz8qy5SeA/profile-displayphoto-shrink_800_800/0/1639842284245?e=1681948800&v=beta&t=woElIQ2sL3VLAxfBq9uCnE9dnz-s8L-b4irYHO5jD2g',
+    },
+    
+    {
+      name: 'Chris Doughty (Rapid7 Manager, Dev Ops Security / FEDRAMP)',
+      text: 'Matt has a strong drive for accomplishing work and a bold personality when it comes to being forthcoming and asking questions. Matt has been a strong voice in the realm of improving processes, and is fearless when grabbing new tickets. These are only a couple of the many great qualities that Matt possesses that will grow his impact and knowledge as his career progresses.',
+      image: 'https://media.licdn.com/dms/image/C5603AQEZSeheSECGxQ/profile-displayphoto-shrink_800_800/0/1632836607372?e=1681948800&v=beta&t=vzhmKew93DK6CbcnlNdy1VtpfWKjP-_iB14ruJNlMOk',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Evan Blair (Owner and CEO, E. Blair & Associates)',
+      text: 'Matt has a strong drive not only to deliver work consistently, but is also an ace in the hole when it comes to learning quickly and developing out of the box solutions for our customers. As a systems technician, he was able help me and my team come up with custom solutions that helped remedy our customer problems and retain them as happy returning customers.',
+      //image: '',
     },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-    */
   ],
 };
 
