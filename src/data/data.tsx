@@ -11,9 +11,10 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
+/*
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,6 +26,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+*/
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,7 +46,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Matt Hagan Dev Portfolio',
+  title: 'Matt Hagan\'s Dev Portfolio',
   description: "Matt Hagan's Developer Portfolio",
 };
 
@@ -103,9 +105,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm Matt Hagan, a Software Security Engineer and Penetration Tester from Colorado. I studied at Worcester Polytechnic Institute, where I got my Bachelor of Science in electrical engineering, computer engineering, and computer science with a concentration in cyber security. As a security consultant, I conduct internal network, external network, web application, wireless, phishing, and vishing based penetration testing for top Fortune 500 companies.`,
   aboutItems: [
     {label: 'Location', text: 'Austin, Texas', Icon: MapIcon},
     {label: 'Age', text: '25', Icon: CalendarIcon},
@@ -121,69 +121,85 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Penetration Testing',
     skills: [
       {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
+        name: 'Internal Networks',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'External Networks',
+        level: 10,
+      },
+      {
+        name: 'Web Application',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Wireless Networks',
         level: 6,
+      },
+      {
+        name: 'Electronic Social Engineering',
+        level: 5,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Systems Engineering',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Terraform',
+        level: 9,
+      },
+      {
+        name: 'Kubernetes',
+        level: 7,
+      },
+      {
+        name: 'Jenkins CI/CD',
+        level: 6,
+      },
+      {
+        name: 'AWS',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Backend Development',
+    skills: [
+      {
+        name: 'Python',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'Spring',
         level: 5,
       },
       {
         name: 'Golang',
         level: 4,
       },
+      {
+        name: 'Rust',
+        level: 3,
+      },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Frontend Development',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'React',
+        level: 5,
       },
       {
-        name: 'Flutter',
+        name: 'TypeScript',
         level: 4,
       },
       {
-        name: 'Swift',
+        name: 'GraphQL',
         level: 3,
       },
     ],
@@ -194,6 +210,7 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  /*
   {
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
@@ -260,6 +277,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://timbaker.me',
     image: porfolioImage11,
   },
+  */
 ];
 
 /**
@@ -267,40 +285,64 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: 'May 2020',
+    location: 'Worcester Polytechnic Institute',
+    title: 'Bachelor of Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'January 2022 - Present',
+    location: 'Rapid7',
+    title: 'Penetration Tester',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>• Consulted to top Fortune 500 companies to conduct internal, external, phishing, vishing, wireless and web app based penetration testing.</li>
+        <li>• Interacted directly with client senior leadership to scope engagements, document vulnerability findings and present those findings directly to over 50 client senior leadership teams.</li>
+        <li>• Worked cross functionally to expand Rapid7’s internal penetration testing team tooling.</li>
+     </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'August 2020 - December 2021',
+    location: 'Rapid7',
+    title: 'Software Security Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>• Pioneered a weekly penetration testing lab series aimed at increasing security knowledge for developers. This resulted in 11 different teams gaining first hand knowledge of an attacker’s mindset over 15 months.</li>
+        <li>• Re-engineered company-wide Jenkins CI/CD pipeline utilizing VCenter and Chef configuration-as-code. This resulted in saving over 400 man hours per month across hundreds of developers.</li>
+        <li>• Migrated Metasploit Pro from Ruby on Rails 4 to 5 while adhering to test-driven development standards. This resulted in the removal of 27 distinct customer-facing bugs.</li>
+        <li>• Utilized Java, Spring and Terraform to implement a new feature into Insight Vulnerability Management platform that allows end-users to have custom scoped policies tailored to their network needs.</li>
+     </ul>
+    ),
+  },
+  {
+    date: 'May 2019 - AUgust 2019',
+    location: 'Fidelity Investments',
+    title: 'Full Stack Security Developer',
+    content: (
+      <ul>
+        <li>• Discovered a critical vulnerability within the baseboard management controllers upon penetration testing
+new Intel and AMD enterprise infrastructure servers.</li>
+        <li>• Upon discovery, an extensive security report was designed and delivered on the vulnerability where I
+directly presented the findings to the Senior Vice President of Fidelity Investments.</li>
+        <li>•  Utilized DevOps development practices in Docker, Go, Python, Bash, and AngularJS to increase
+performance of cloud-based compute platforms.</li>
+     </ul>
+    ),
+  },
+  {
+    date: 'August 2020 - December 2021',
+    location: 'Silicon Labs',
+    title: 'Applications/Core IoT Developer',
+    content: (
+      <ul>
+        <li>• Designed and implemented a system-on-chip over-the-air update server in C for ZigBee IoT devices
+resulting in a headless deployment option for EFR32 Chipsets over UART Xmodem.</li>
+        <li>• Reported findings in published app note titled, “AN728: Over-the-Air Bootload Server and Client Setup”</li>
+     </ul>
     ),
   },
 ];
@@ -311,6 +353,7 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
+    /*
     {
       name: 'John Doe',
       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
@@ -326,6 +369,7 @@ export const testimonial: TestimonialSection = {
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
+    */
   ],
 };
 
@@ -335,27 +379,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Here are some other places you can find me if you ant to reach out!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'matt@doublediamond.io',
+      href: 'mailto:matt@doublediamond.io',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Austin, Texas',
+      href: 'https://www.google.com/maps/place/Austin/@30.2672791,-97.7397479,17z',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@themrhagan',
+      href: 'https://www.instagram.com/themrhagan/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'nghthwkmusic',
+      href: 'https://github.com/nghthwkmusic',
     },
   ],
 };
@@ -364,9 +408,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/nghthwkmusic'},
+  //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/mrhagan/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/themrhagan/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/themrhagan'},
 ];
