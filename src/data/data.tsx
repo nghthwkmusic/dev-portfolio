@@ -215,16 +215,17 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Soteria: IDS/IPS for IoT Devices',
     description: 'Securing IoT Networks Through Specification and Encryption',
-    url: 'https://web.wpi.edu/Pubs/E-project/Available/E-project-051720-222250/unrestricted/Soteria_Report.pdf',
+    url: 'https://digital.wpi.edu/concern/student_works/rb68xf36w?locale=pt-BR',
+    image: porfolioImage1,
+  },
+  
+  {
+    title: 'Phisher: A CLI Voice Cloning Tool',
+    description: 'Phisher is a command-line tool that allows users to create and use synthetic voices from web based videos or audio files.',
+    url: 'https://github.com/nghthwkmusic/phisher',
     image: porfolioImage1,
   },
   /*
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
-  },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
@@ -290,7 +291,18 @@ export const education: TimelineItem[] = [
     date: 'May 2020',
     location: 'Worcester Polytechnic Institute',
     title: 'Bachelor of Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: (
+      <ul>  
+        <li>Grade Point Average: 3.86/4.00</li>
+        <li>Activities and societies:</li>
+        <li>• Member, Tau Beta Pi (Engineering Honor Society) </li>
+        <li>• President, Eta Kappa Nu (IEEE Honor Society) President</li>
+        <li>• President, Beta Theta Pi (Eta Tau Chapter)</li>
+        <li>• Team Manager & Rower, Men’s Varsity Crew</li>
+        <li>• Upsilon Pi Epsilon (ACM Honor Society)</li>
+        <li>• Member, Omicron Delta Kappa (National Leadership Honor Society) President</li>
+     </ul>
+    ),
   },
 ];
 
@@ -301,9 +313,10 @@ export const experience: TimelineItem[] = [
     title: 'Penetration Tester',
     content: (
       <ul>
-        <li>• Consulted to top Fortune 500 companies to conduct internal, external, phishing, vishing, wireless and web app based penetration testing.</li>
-        <li>• Interacted directly with client senior leadership to scope engagements, document vulnerability findings and present those findings directly to over 50 client senior leadership teams.</li>
-        <li>• Worked cross functionally to expand Rapid7’s internal penetration testing team tooling.</li>
+        <li>• Consulted for top Fortune 500 companies to conduct web application, API, internal, external, wireless network, phishing, vishing based penetration testing. </li>
+        <li>• Performed voluntary security research on multiple undisclosed Fortune 500 entities. This research led to highly impactful zero-day findings that were responsibly disclosed to said entities.</li>
+        <li>• Interacted directly with client senior leadership to scope engagements, document vulnerability findings and present those findings directly to over 80 client executive teams.</li>
+        <li>• Improved processes by developing internal-team tooling and comprehensive playbooks/documentation.</li>
      </ul>
     ),
   },
@@ -321,7 +334,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'May 2019 - AUgust 2019',
+    date: 'May 2019 - August 2019',
     location: 'Fidelity Investments',
     title: 'Full Stack Security Developer',
     content: (
